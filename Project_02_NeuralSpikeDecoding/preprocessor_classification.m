@@ -8,7 +8,7 @@ for i = 1:98
     count =1;
     for k=1:8        
         for n=1:length(training_data)  
-            tmax=200;
+            tmax=600;
             spike_num=0;
             for t=1:tmax
                 if training_data(n,k).spikes(i,t) == 1
@@ -23,5 +23,4 @@ for i = 1:98
 end
 
 
-save -6 data/classification/spike_count_half.mat spike_count
-save -6 data/classification/target_half.mat target
+save -6 data/classification/spike_count_600.mat spike_count
